@@ -23,9 +23,28 @@ li {
   padding-top: 10px;
 }
 
-.naxph-logo {
+#naxph-logo {
   font-family: 'Noto Serif SC', serif;
 }
+
+@media only screen and (max-width: 1080px) {
+  #naxph-logo {
+    font-size: 85%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #naxph-logo {
+    
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #naxph-logo {
+    
+  }
+}
+
 
 #resources-link {
   text-decoration: none;
