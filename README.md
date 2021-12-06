@@ -1,2 +1,7 @@
-# personal-website-2022
-Personal Website built for 2022. Made with Bootstrap.
+# Personal Website 2022 R1
+The latest version of my personal website. Built with love by yours truly.
+
+### Powered by
+Bootstrap 5
+Google Fonts
+FontAwesome
