@@ -11980,7 +11980,7 @@ body {
       rgba(0, 0, 0, 0.7) 75%,
       #000 100%
     ),
-    url("../assets/img/rain2.gif");
+    url("../assets/img/train.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12077,7 +12077,7 @@ body {
       rgba(0, 0, 0, 0.5) 75%,
       #000 100%
     ),
-    url("../assets/img/train.gif");
+    url("../assets/img/rain2.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
