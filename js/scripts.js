@@ -40,3 +40,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
     })
   })
 })
+
+var typed = new Typed("#typed", {
+  strings: [
+    "Web Development^1000",
+    "App Development^1000",
+    "Data Science^1000",
+    "Content Creation^1000",
+    "Photography^1000",
+    "Anime / Manga^1000",
+    "Virtual Youtubers^1000",
+    "Gaming^1000",
+  ],
+  backSpeed: 50,
+  typeSpeed: 50,
+  loop: true,
+})

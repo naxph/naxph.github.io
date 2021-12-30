@@ -11980,7 +11980,7 @@ body {
       rgba(0, 0, 0, 0.7) 75%,
       #000 100%
     ),
-    url("../assets/img/train.gif");
+    url("../assets/img/musicvideo.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12077,7 +12077,7 @@ body {
       rgba(0, 0, 0, 0.5) 75%,
       #000 100%
     ),
-    url("../assets/img/rain2.gif");
+    url("../assets/img/train.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12138,4 +12138,26 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+.linebreaker {
+  border: 1px solid !important;
+  border-color: white !important;
+}
+
+#typed {
+  font-size: 24px;
+}
+
+#hero-text {
+  font-family: "Kosugi Maru", sans-serif;
+}
+
+.typed-cursor {
+  color: white;
+  font-size: 24px;
+}
+
+#hero-linebreaker {
+  opacity: 0%;
 }
