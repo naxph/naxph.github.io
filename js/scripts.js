@@ -169,8 +169,12 @@ $("#social-whatsapp").hover(
 
 $("#social-unsplash").hover(
   function () {
-    $(".masthead").css("background", "#000000")
-    $(".hero-emphasis").css("color", "#FFFFFF")
+    $(".masthead").css("background", "white")
+    $(".hero-emphasis").css("color", "green")
+    $("h1").css("color", "#000000")
+    $(".nav-link").css("color", "#000000")
+    $(".navbar-brand").css("color", "#000000")
+    $(".social-icons").css("color", "#000000")
   },
   function () {
     $(".masthead").css(
@@ -182,6 +186,10 @@ $("#social-unsplash").hover(
     $(".masthead").css("background-attachment", "scroll")
     $(".masthead").css("background-size", "cover")
     $(".hero-emphasis").css("color", "coral")
+    $("h1").css("color", "white")
+    $(".nav-link").css("color", "white")
+    $(".navbar-brand").css("color", "white")
+    $(".social-icons").css("color", "white")
   }
 )
 
