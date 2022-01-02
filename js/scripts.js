@@ -175,6 +175,8 @@ $("#social-unsplash").hover(
     $(".nav-link").css("color", "#000000")
     $(".navbar-brand").css("color", "#000000")
     $(".social-icons").css("color", "#000000")
+    $("#typed").css("color", "#000000")
+    $(".typed-cursor").css("color", "#000000")
   },
   function () {
     $(".masthead").css(
@@ -190,6 +192,8 @@ $("#social-unsplash").hover(
     $(".nav-link").css("color", "white")
     $(".navbar-brand").css("color", "white")
     $(".social-icons").css("color", "white")
+    $("#typed").css("color", "white")
+    $(".typed-cursor").css("color", "white")
   }
 )
 

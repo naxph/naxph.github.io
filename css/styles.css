@@ -12145,6 +12145,8 @@ body {
 
 #typed {
   font-size: 24px;
+  color: white;
+  transition: 0.3s;
 }
 
 #hero-text {
