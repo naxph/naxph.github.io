@@ -60,8 +60,6 @@ var typed = new Typed("#typed", {
 
 var typed = new Typed("#about-typed", {
   strings: [
-    "Anime",
-    "Games",
     "Global Politics",
     "Formula 1",
     "Machine Learning",
