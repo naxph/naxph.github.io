@@ -44,14 +44,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
 //Typed.js
 var typed = new Typed("#typed", {
   strings: [
-    "Web Development^1000",
-    "App Development^1000",
-    "Data Science^1000",
-    "Content Creation^1000",
-    "Photography^1000",
-    "Anime / Manga^1000",
-    "Virtual Youtubers^1000",
-    "Gaming^1000",
+    "Anime, Comics, Games.^2000",
+    "Photography.^2000",
+    "Web Development.^2000",
+    "Content Creation.^2000",
   ],
   backSpeed: 50,
   typeSpeed: 50,
@@ -77,156 +73,73 @@ var typed = new Typed("#about-typed", {
 //Social Hover Event Triggers
 $("#social-twitter").hover(
   function () {
-    $(".masthead").css("background", "#1DA1F2")
-    $(".hero-emphasis").css("color", "#4A00E0")
+    $(".sidenav").css("background-color", "#1DA1F2")
   },
   function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
+    $(".sidenav").css("background-color", "#ffffff")
   }
 )
 
 $("#social-instagram").hover(
   function () {
-    $(".masthead").css("background", "#C13584")
-    $(".hero-emphasis").css("color", "yellow")
+    $(".sidenav").css("background", "#C13584")
   },
   function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
+    $(".sidenav").css("background", "#ffffff")
   }
 )
 
 $("#social-github").hover(
   function () {
-    $(".masthead").css("background", "#333")
-    $(".hero-emphasis").css("color", "#FBD786")
+    $(".sidenav").css("background", "#333")
   },
   function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
+    $(".sidenav").css("background", "#ffffff")
   }
 )
 
 $("#social-youtube").hover(
   function () {
-    $(".masthead").css("background", "#FF0000")
-    $(".hero-emphasis").css("color", "#F5F5DC")
+    $(".sidenav").css("background", "#FF0000")
   },
   function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
+    $(".sidenav").css("background", "#ffffff")
   }
 )
 
 $("#social-whatsapp").hover(
   function () {
-    $(".masthead").css("background", "#25D366")
-    $(".hero-emphasis").css("color", "#FC8EAC")
+    $(".sidenav").css("background", "#25D366")
   },
   function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
+    $(".sidenav").css("background", "#ffffff")
   }
 )
 
 $("#social-unsplash").hover(
   function () {
-    $(".masthead").css("background", "white")
-    $(".hero-emphasis").css("color", "green")
-    $("h1").css("color", "#000000")
-    $(".nav-link").css("color", "#000000")
-    $(".navbar-brand").css("color", "#000000")
-    $(".social-icons").css("color", "#000000")
-    $("#typed").css("color", "#000000")
-    $(".typed-cursor").css("color", "#000000")
+    $(".sidenav").css("background", "#000000")
   },
   function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
-    $("h1").css("color", "white")
-    $(".nav-link").css("color", "white")
-    $(".navbar-brand").css("color", "white")
-    $(".social-icons").css("color", "white")
-    $("#typed").css("color", "white")
-    $(".typed-cursor").css("color", "white")
-  }
-)
-
-$("#social-blog").hover(
-  function () {
-    $(".masthead").css("background", "#f5af19")
-    $(".hero-emphasis").css("color", "#1a2a6c")
-  },
-  function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
+    $(".sidenav").css("background", "#ffffff")
   }
 )
 
 $("#social-steam").hover(
   function () {
-    $(".masthead").css("background", "#1b2838")
-    $(".hero-emphasis").css("color", "#FFF200")
+    $(".sidenav").css("background", "#1b2838")
   },
   function () {
-    $(".masthead").css(
-      "background",
-      "linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.7) 75%,#000 100%),url('../assets/img/musicvideo.gif'"
-    )
-    $(".masthead").css("background-position", "center")
-    $(".masthead").css("background-repeat", "no-repeat")
-    $(".masthead").css("background-attachment", "scroll")
-    $(".masthead").css("background-size", "cover")
-    $(".hero-emphasis").css("color", "coral")
+    $(".sidenav").css("background", "#ffffff")
   }
 )
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "28rem"
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0"
+}

@@ -28,6 +28,16 @@
       href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -35,30 +45,74 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">なっくす ︱ NAX</a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">My Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#signup">Contact Me</a>
-            </li>
-          </ul>
+        <a href="javascript:void(0)" onclick="openNav()">
+          <span>
+            <i class="fas fa-bars" style="color: white"></i>
+          </span>
+        </a>
+        <a class="navbar-brand" href="#page-top">ナックス</a>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            ><i class="fas fa-angle-double-left"></i></i
+          ></a>
+          <hr class="sidebar-seperator" />
+          <a
+            href="https://naxph.dev/blog"
+            onclick="closeNav()"
+            class="section-link"
+            >Blog</a
+          >
+          <a href="#about" onclick="closeNav()" class="section-link">About</a>
+          <a href="#projects" onclick="closeNav()" class="section-link"
+            >Projects</a
+          >
+          <a href="#signup" onclick="closeNav()" class="section-link"
+            >Contact</a
+          >
+          <div class="social-container">
+            <a
+              class="social-icons"
+              id="social-twitter"
+              href="https://twitter.com/naxph_"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="social-icons"
+              id="social-instagram"
+              href="https://instagram.com/naxph"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="social-icons"
+              id="social-github"
+              href="https://github.com/naxph"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              class="social-icons"
+              id="social-youtube"
+              href="https://www.youtube.com/channel/UCGjCcjJlfd1PvhGHnQ6rTOg"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              class="social-icons"
+              id="social-whatsapp"
+              href="https://api.whatsapp.com/send?phone=601114464903"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              class="social-icons"
+              id="social-unsplash"
+              href="https://unsplash.com/naxph"
+              ><i class="fab fa-unsplash"></i
+            ></a>
+            <a
+              class="social-icons"
+              id="social-steam"
+              href="https://steamcommunity.com/id/naxph"
+              ><i class="fab fa-steam"></i
+            ></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -70,61 +124,9 @@
         <div class="d-flex justify-content-center">
           <div class="">
             <h1 class="mx-auto my-0 text-uppercase" id="hero-text">
-              Creating the <span class="hero-emphasis">future.</span>
+              The future of <br />
+              <span class="mt-2 mb-5" id="typed"></span>
             </h1>
-            <hr class="hero-linebreaker" />
-            <span class="mx-auto mt-2 mb-5" id="typed"></span>
-            <hr class="hero-linebreaker" />
-            <div class="social d-flex">
-              <a
-                class="mx-2 social-icons"
-                id="social-blog"
-                href="https://naxph.dev/blog"
-                ><i class="fas fa-rss-square"></i
-              ></a>
-              <a
-                class="mx-2 social-icons"
-                id="social-twitter"
-                href="https://twitter.com/naxph_"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="mx-2 social-icons"
-                id="social-instagram"
-                href="https://instagram.com/naxph"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                class="mx-2 social-icons"
-                id="social-github"
-                href="https://github.com/naxph"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                class="mx-2 social-icons"
-                id="social-youtube"
-                href="https://www.youtube.com/channel/UCGjCcjJlfd1PvhGHnQ6rTOg"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a
-                class="mx-2 social-icons"
-                id="social-whatsapp"
-                href="https://api.whatsapp.com/send?phone=601114464903"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-              <a
-                class="mx-2 social-icons"
-                id="social-unsplash"
-                href="https://unsplash.com/naxph"
-                ><i class="fab fa-unsplash"></i
-              ></a>
-              <a
-                class="mx-2 social-icons"
-                id="social-steam"
-                href="https://steamcommunity.com/id/naxph"
-                ><i class="fab fa-steam"></i
-              ></a>
-            </div>
           </div>
         </div>
       </div>

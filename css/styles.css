@@ -56,7 +56,7 @@
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
-  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI,
+  --bs-body-font-family: "Nunito", -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
@@ -4475,9 +4475,10 @@ fieldset:disabled .btn {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Reggae One", cursive;
 }
 .navbar-nav {
   display: flex;
@@ -11974,18 +11975,23 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.7) 75%,
-      #000 100%
-    ),
-    url("../assets/img/musicvideo.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  transition: 0.5s;
+  background: linear-gradient(-45deg, red, green, blue, yellow);
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .masthead h1,
 .masthead .h1 {
@@ -11997,6 +12003,7 @@ body {
   letter-spacing: 0.8rem;
   color: white;
 }
+
 .masthead h2,
 .masthead .h2 {
   max-width: 20rem;
@@ -12144,18 +12151,23 @@ body {
 }
 
 #typed {
-  font-size: 24px;
-  color: white;
+  font-size: 3rem;
+  color: coral;
   transition: 0.3s;
 }
 
 #hero-text {
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 60px;
+  display: block;
 }
 
 .typed-cursor {
   color: white;
-  font-size: 24px;
+  font-size: 3rem;
 }
 
 .hero-linebreaker {
@@ -12163,7 +12175,17 @@ body {
 }
 
 .social-icons {
-  transition: 0.5s;
+  text-decoration: none;
+  font-size: 18px;
+  color: #777;
+  padding-left: 15px;
+}
+
+.social-container {
+  text-align: right;
+  position: absolute;
+  bottom: 64px;
+  right: 64px;
 }
 
 .scroll-down {
@@ -12200,4 +12222,68 @@ body {
 .hero-emphasis {
   color: coral;
   transition: 0.5s;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ffffff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.section-link {
+  padding: 16px 56px 16px 16px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #4726e1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 56px;
+  font-size: 24px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #777;
+}
+
+.sidebar-seperator {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
