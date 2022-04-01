@@ -74,69 +74,89 @@ var typed = new Typed("#about-typed", {
 $("#social-twitter").hover(
   function () {
     $(".sidenav").css("background-color", "#1DA1F2")
+    $(".section-link").css("color", "#ffffff")
   },
   function () {
     $(".sidenav").css("background-color", "#ffffff")
+    $(".section-link").css("color", "#000000")
   }
 )
 
 $("#social-instagram").hover(
   function () {
     $(".sidenav").css("background", "#C13584")
+    $(".section-link").css("color", "#ffffff")
   },
   function () {
     $(".sidenav").css("background", "#ffffff")
+    $(".section-link").css("color", "#000000")
   }
 )
 
 $("#social-github").hover(
   function () {
     $(".sidenav").css("background", "#333")
+    $(".section-link").css("color", "#ffffff")
   },
   function () {
     $(".sidenav").css("background", "#ffffff")
+    $(".section-link").css("color", "#000000")
   }
 )
 
 $("#social-youtube").hover(
   function () {
     $(".sidenav").css("background", "#FF0000")
+    $(".section-link").css("color", "#ffffff")
   },
   function () {
     $(".sidenav").css("background", "#ffffff")
+    $(".section-link").css("color", "#000000")
   }
 )
 
 $("#social-whatsapp").hover(
   function () {
     $(".sidenav").css("background", "#25D366")
+    $(".section-link").css("color", "#ffffff")
   },
   function () {
     $(".sidenav").css("background", "#ffffff")
+    $(".section-link").css("color", "#000000")
   }
 )
 
 $("#social-unsplash").hover(
   function () {
     $(".sidenav").css("background", "#000000")
+    $(".section-link").css("color", "#ffffff")
   },
   function () {
     $(".sidenav").css("background", "#ffffff")
+    $(".section-link").css("color", "#000000")
   }
 )
 
 $("#social-steam").hover(
   function () {
     $(".sidenav").css("background", "#1b2838")
+    $(".section-link").css("color", "#ffffff")
   },
   function () {
     $(".sidenav").css("background", "#ffffff")
+    $(".section-link").css("color", "#000000")
   }
 )
 
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "28rem"
+/* Set the width of the side navigation to 28rem */
+var mobileScreen = window.matchMedia("(max-width: 700px)")
+
+function openNav(mobileScreen) {
+  if (mobileScreen.matches) {
+    document.getElementById("mySidenav").style.width = "100%"
+  } else {
+    document.getElementById("mySidenav").style.width = "28rem"
+  }
 }
 
 /* Set the width of the side navigation to 0 */
