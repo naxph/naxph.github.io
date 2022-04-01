@@ -55,15 +55,7 @@ var typed = new Typed("#typed", {
 })
 
 var typed = new Typed("#about-typed", {
-  strings: [
-    "Global Politics",
-    "Formula 1",
-    "Machine Learning",
-    "AI",
-    "Cybersecurity",
-    "Game Development",
-    "Technology",
-  ],
+  strings: ["ACG Related Content", "Event Photography", "Web Development"],
   backSpeed: 40,
   typeSpeed: 40,
   loop: true,
