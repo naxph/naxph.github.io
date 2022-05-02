@@ -40,6 +40,7 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/gradient.js"></script>
   </head>
   <body id="page-top">
     <!-- Navigation-->
@@ -118,8 +119,13 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead">
+      <canvas id="gradient-canvas" style="width: 100vw; height: 100vh;"></canvas>
+        <script>
+            var gradient = new Gradient()
+            gradient.initGradient('#gradient-canvas');
+        </script>
       <div
-        class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center"
+        class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center" id="masthead-container"
       >
         <div class="d-flex justify-content-center">
           <div class="">
